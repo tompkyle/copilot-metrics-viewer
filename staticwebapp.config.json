@@ -1,7 +1,7 @@
 {
   "networking": {
     "allowedIpRanges": [
-      "${{ secrets.MYIP }}"
+       ${{ secrets.MYIP }}
     ]
   }
 }
