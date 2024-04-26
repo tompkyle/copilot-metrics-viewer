@@ -25,9 +25,7 @@ jobs:
             "networking": {
               "allowedIpRanges": [ 
               "${{ secrets.MYIP }}",
-              "${{ secrets.DTIP }}",
-              "${{ secrets.SMIP }}"
-              ]
+              "${{ secrets.DTIP }}"              ]
             }
           }' > staticwebapp.config.json
       - name: Build And Deploy
