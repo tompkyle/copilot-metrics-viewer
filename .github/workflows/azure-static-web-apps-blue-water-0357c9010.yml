@@ -24,7 +24,9 @@ jobs:
           echo '{
             "networking": {
               "allowedIpRanges": [ 
-              "${{ secrets.DTIP }}"
+              "${{ secrets.TKIP }}",
+              "${{ secrets.DTIP }}",
+              "${{ secrets.SHIP }}"
              ]
             }
           }' > staticwebapp.config.json
