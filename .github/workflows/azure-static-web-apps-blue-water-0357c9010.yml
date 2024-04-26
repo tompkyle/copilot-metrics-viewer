@@ -24,7 +24,6 @@ jobs:
           echo '{
             "networking": {
               "allowedIpRanges": [ 
-              "${{ secrets.TKIP }}",
               "${{ secrets.DTIP }}",
               "${{ secrets.SHIP }}"
              ]
