@@ -19,16 +19,6 @@ jobs:
         with:
           submodules: true
           lfs: false
-      - name: Create staticwebapp.config.json
-        run: |
-          echo '{
-            "networking": {
-              "allowedIpRanges": [ 
-              "${{ secrets.DTIP }}",
-              "${{ secrets.SHIP }}"
-             ]
-            }
-          }' > staticwebapp.config.json
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
