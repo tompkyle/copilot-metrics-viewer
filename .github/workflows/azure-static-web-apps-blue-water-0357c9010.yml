@@ -24,7 +24,8 @@ jobs:
           echo '{
             "networking": {
               "allowedIpRanges": [ 
-              "${{ secrets.IP1 }}"             ]
+              "${{ secrets.IP1 }}",
+              "${{ secrets.IP2 }}" ]
             }
           }' > staticwebapp.config.json   
       - name: Build And Deploy
